@@ -1,5 +1,5 @@
 # php-fshare-downloader
-Script có thể download tất cả các file theo Folder hoặc từng File riêng lẻ trên FShare viết bằng PHP. Nên sử dụng PHP7 là tối thiểu.
+Script có thể download tất cả các file theo Folder hoặc từng File riêng lẻ trên FShare viết bằng PHP. Nên sử dụng PHP7 là tối thiểu. Ưu tiên các bạn có tài khoản premium của FShare thì việc download sẽ nhanh hơn.
 
 # 1. Install Packages
 
