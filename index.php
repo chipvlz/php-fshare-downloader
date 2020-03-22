@@ -18,13 +18,20 @@ $link = [
 ];
 
 $fshareAccount = [
-
-    'type' => 'free', // hoặc: premium
+/*
+    'type' => 'free',
     'user' => '',
     'pass' => '',
-
+*/
 
     'fcode' => '',
+
+    
+
+    'type' => 'premium',
+    'user' => '',
+    'pass' => '',
+    
 ];
 
 $storagePath = realpath('./downloads');
@@ -279,17 +286,5 @@ function downloadItem($item, $fileType = 'inFolder')
     }
 
     echo sprintf("\n\n%s :downloading %s\n", 'https://www.fshare.vn/file/' . $item->linkcode, $item->name);
-
-    try {
-        $response = $client->get($response->url, [
-            'sink' => $itemPath
-        ]);
-
-    } catch (RequestException $e) {
-        echo $color->getColoredString(sprintf("\n%s :download failed %s", 'https://www.fshare.vn/file/' . $item->linkcode, $item->name), 'white', 'red');
-        file_put_contents('fails.txt', sprintf("\n%s :download failed %s", 'https://www.fshare.vn/file/' . $item->linkcode, $item->path . '/' . $item->name), FILE_APPEND);
-        return;
-    }
-
-    echo sprintf("%s :%s", 'https://www.fshare.vn/file/' . $item->linkcode, $response->getStatusCode() == 200 ? 'downloaded ' . $item->path . '/' . $item->name : 'error');
+    echo sprintf("\n\n%s | %s | %s\n", $item->name, $item->size, $response->url);
 }
