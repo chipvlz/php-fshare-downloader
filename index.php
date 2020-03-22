@@ -19,7 +19,7 @@ $link = [
 
 $fshareAccount = [
 
-    'type' => 'free',
+    'type' => 'free', // hoặc: premium
     'user' => '',
     'pass' => '',
 
