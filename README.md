@@ -14,3 +14,5 @@ Mở file index.php cập nhật tài khoản fshare của mình vào ```$fshare
 
 # 4. Chạy script, ưu tiên nên chạy qua terminal hoặc cắm trên vps
 Vào terminal gõ: ```php index.php``` và chờ kết quả
+
+enjoy :))
